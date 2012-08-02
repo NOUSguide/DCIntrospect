@@ -163,7 +163,7 @@ id UITextInputTraits_valueForKey(id self, SEL _cmd, NSString *key)
 
 + (DCIntrospect *)sharedIntrospector
 {
-#ifdef DEBUG
+#if TARGET_IPHONE_SIMULATOR
 	if (!sharedInstance)
 	{
 		sharedInstance = [[DCIntrospect alloc] init];
